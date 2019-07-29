@@ -1,0 +1,27 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node --files src/app.ts -e ts,js,ejs,json",
+    "_start": "node dist/app.js",
+    "start": "cross-env NODE_ENV=default npm run _start",
+    "build": "tsc -b"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.1",
+    "rimraf": "^2.6.3",
+    "ts-node": "^6.2.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
